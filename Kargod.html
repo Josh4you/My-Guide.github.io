@@ -1,0 +1,58 @@
+<?php  
+include 'connect.php';
+?>
+<html>
+<head>
+<meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="includes/css/styles.css">
+</head>
+<body>
+<div class="well">
+<div class="well-small">
+<h2>Detail Design of the site</h2>
+<iframe src="https://www.google.com/maps/d/embed?mid=1Oxb5v-euG696HG2uPYxbGMFQ0Lc" width="1250" height="600"frameborder="0" style="border:0" allowfullscreen></iframe>
+<table border="0" cellpadding="10px" cellspacing="0">
+	<tr>
+		<td>place name</td>
+		<td>parks</td>
+		<td>museums</td>
+		<td>Coffee_shops</td><br>
+		<td>Malls</td>
+	</tr>
+	<?php 
+		$sql= "SELECT place_name,Parks,Museums,Coffee_shops,Malls FROM places WHERE place_name='Kannur'";
+		$result= $db->query($sql);
+		if($result->num_rows>0)
+		{
+			while($row=$result->fetch_assoc()){
+			
+		?>
+	<tr>
+		<td><?=$row['place_name']?></td>
+		<td><?=$row['Parks']?></td>
+		<td><?=$row['Museums']?></td>
+		<td><?=$row['Coffee_shops']?></td>
+		<td><?=$row['Malls']?></td>
+	</tr>
+
+<?php
+			}
+		}
+?>
+</div>
+</div>
+</table>
+<div>
+
+</div>
+</body>
+</html>

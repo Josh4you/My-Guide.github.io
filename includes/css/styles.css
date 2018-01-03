@@ -1,0 +1,277 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+#features {
+	text-align: center;
+}
+
+#features img {
+	margin: 0 0 20px;
+}
+
+#inputMessage {
+	margin-bottom: 15px;
+}
+
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+
+.well .page-header {
+	margin-top: 400px 0;
+}
+
+.well .page-header h1 {
+	margin-top: 100px 0;
+}
+
+.wells .page-header {
+	margin-top: 100px 0;
+}
+
+.wells .page-header h1 {
+	margin-top: 100px 0;
+}
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}
+.h4{
+	color:#1aa3ff;
+}
+#googlemaps { 
+  height: 100%; 
+  width: 100%; 
+  position:absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+#contactform { 
+  position: relative; 
+  z-index: 1; /* The z-index should be higher than Google Maps */
+  width: 300px;
+  margin: 60px auto 0;
+  padding: 10px;
+  background: black;
+  height: auto;
+  opacity: .45; /* Set the opacity for a slightly transparent Google Form */ 
+  color: white;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+#searchInput {
+	width: 200px;
+}
+
+.navbar-brand {
+	margin-bottom:2px 10px 0px 0px ;
+	padding: 200px 200px;
+}
+.navbar{
+	background-image:url("images/logo.png");
+	background-color:white;
+} 
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel {
+	margin-top:150px;
+}
+
+.carousel-caption {
+	font-size: 24px;
+}
+
+.carousel-caption h4 {
+	font-size: 32px;
+}
+
+#myCarousel .item { height: 300px; }
+
+#slide1 {
+	background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
+}
+
+#slide2 {
+	background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
+}
+
+#slide3 {
+	background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
+}
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.jumbotron{
+	
+	margin-top:250px;
+}
+.form-group {
+  
+  padding:325px 350px 75px 250px;
+}
+.alert {
+	margin-top: 20px;
+	display: none;
+}
+
+.well {
+	margin: 10px 0;
+}
+
+.well-large{
+	margin: 100px 0 ;
+	background-color: #f2f2f2;
+}
+.lead{
+	font-family:"Times New Roman", cursive, sans-serif;
+}
+
+.tabbable img.thumbnail {
+	margin: 0 40px 20px 0;
+}
+
+.thumbnails {
+	margin: 20px 0;
+}
+
+.thumbnail {
+	position: relative;
+}
+
+.thumbnail h3 {
+	font-size: 16px;
+	margin: 0 0 10px;
+	line-height: 20px;
+}
+
+.thumbnail .price {
+	font-size: 22px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 10px;
+}
+
+.thumbnail .price sup {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.thumbnail span.glyphicon {
+	margin-right: 5px;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	#myCarousel .item { height: 110px; }
+	
+	#slide1 {
+		background: url('../../images/caro_small.jpg') top center no-repeat;
+	}
+	
+	#slide2 {
+		background: url('../../images/Mon_small.jpg') top center no-repeat;
+	}
+	
+	#slide3 {
+		background: url('../../images/beach.jpg') top center no-repeat;
+	}
+	
+	.thumbnail .price {
+		font-size: 14px;
+	}
+	
+	.thumbnail .price sup {
+		font-size: 10px;
+	}
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	
+	#myCarousel .item { height: 310px; }
+	
+	#slide1 {
+		background: url('../../images/caro_medium.jpg') top center no-repeat;
+	}
+	
+	#slide2 {
+		background: url('../../images/Ko_medium.jpg') top center no-repeat;
+	}
+	
+	#slide3 {
+		background: url('../../images/beach.jpg') top center no-repeat;
+	}
+	
+	.carousel-caption {
+		font-size: 16px;
+	}
+	
+	.carousel-caption h4 {
+		font-size: 22px;
+	}
+	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+	#myCarousel .item { height: 500px; width:250;}
+	
+	#slide1 {
+		background: url('../../images/an.jpg') top center no-repeat;
+	}
+	
+	#slide2 {
+		background: url('../../images/Large.jpg') top center repeat;
+	}
+	
+	#slide3 {
+		background: url('../../images/beach.jpg') top center repeat;
+	}
+
+}
+
+
+
